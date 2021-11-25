@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         bootstrap="bootstrap-dev.php"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false">
+  <testsuites>
+    <testsuite name="Nidux global tests">
+      <directory suffix="Test.php">./tests</directory>
+    </testsuite>
+  </testsuites>
+  <logging>
+    <junit outputFile="tests_reports/junit.xml"/>
+    <teamcity outputFile="tests_reports/teamcity.txt"/>
+    <testdoxHtml outputFile="tests_reports/testdox.html"/>
+    <testdoxText outputFile="tests_reports/testdox.txt"/>
+    <testdoxXml outputFile="tests_reports/testdox.xml"/>
+    <text outputFile="tests_reports/logfile.txt"/>
+  </logging>
+</phpunit>
