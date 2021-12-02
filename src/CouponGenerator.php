@@ -12,26 +12,26 @@ class CouponGenerator
      *
      * @var integer
      */
-    private int $sections;
+    private $sections;
 
     /**
      * Length of each part.
      *
      * @var integer
      */
-    private int $sectionLength;
+    private $sectionLength;
 
-    private string $prefix;
+    private $prefix;
 
 
     /**
      * Symbols to use on the random generator
      * @var string
      */
-    private string $symbols = '0123456789ABCDEFGHJKLMNPQRSTUVWXY';
+    private $symbols = '0123456789ABCDEFGHJKLMNPQRSTUVWXY';
 
 
-    private array $badWords = [
+    private $badWords = [
         'SHPX', 'PHAG', 'JNAX', 'JNAT', 'CVFF', 'PBPX', 'FUVG', 'GJNG', 'GVGF', 'SNEG', 'URYY',
         'ZHSS', 'QVPX', 'XABO', 'NEFR', 'FUNT', 'GBFF', 'FYHG', 'GHEQ', 'FYNT', 'PENC', 'CBBC',
         'OHGG', 'SRPX', 'OBBO', 'WVFZ', 'WVMM', 'CUNG', 'TETA', 'PUTA', 'TIT', 'Z0RR'
